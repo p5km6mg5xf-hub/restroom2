@@ -40,7 +40,6 @@ body {
 .left-image h1 {
     writing-mode: vertical-rl;
     font-size: 70px;
-    letter-spacing: -10px;
     position: absolute; 
     top: 40px;          
     right: 50px;         
@@ -68,6 +67,7 @@ body {
 
 .top-section {
     flex: 1;
+    margin-top: 20px;
     padding: 40px 100px;
     text-align: center;
 }
@@ -159,8 +159,9 @@ body {
   color: #000;
 }
 
-  body {
+ body {
     overflow-y: auto;
+    overflow-x: hidden;
     height: auto;
   }
 
@@ -173,13 +174,12 @@ body {
     flex: none;
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1; 
     position: relative;
   }
 
   .left-image h1 {
     font-size: 42px;
-    letter-spacing: -6px;
     top: 24px;
     left: 16px;
   }
@@ -191,16 +191,17 @@ body {
   }
 
   .right-content {
+    position: relative;
     flex: 0 0 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    position: relative;
   }
 
   .top-section {
     padding: 32px 20px;
     text-align: center;
+    order: 1;
   }
 
   .top-section h3 {
@@ -225,31 +226,34 @@ body {
   }
 
   .image-scroll-area {
-    height: auto;
-    padding-bottom: 13px;
+    width: 100%;
+    height: 280px;
     overflow-x: auto;
     overflow-y: hidden;
     transform: none;
+    order: 2;
   }
 
   .scroll-inner {
     display: flex;
     width: 100%;
-    height: 270px;
+    height: 250px;
     transform: none;
   }
 
   .scroll-inner img {
     width: 100%;
-    height: 250px;
+    height: 280px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
 
   .brown-bar {
-    width: 100%;
+    order: 3;
+    position: relative;
+    width: 100vw;
     height: 32px;
-    bottom: 20px;
+    bottom: 0px;
   }
 
   .exit-btn {
@@ -260,6 +264,5 @@ body {
   }
 
 }
-
 
 

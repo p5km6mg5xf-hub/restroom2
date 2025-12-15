@@ -41,7 +41,6 @@ body {
 .left-image h1 {
     writing-mode: vertical-rl;
     font-size: 70px;
-    letter-spacing: -10px;
     position: absolute; 
     top: 40px;          
     right: 50px;         
@@ -120,7 +119,6 @@ body {
 
 .image-scroll-area {
     margin-top: 45px;
-    flex: 1 1 auto;
     height: auto;
     max-height: 440px;
     overflow-x: auto;
@@ -134,7 +132,8 @@ body {
 }
 
 .scroll-inner img {
-    height: 370px
+    height: 385px;
+
 }
 
 .brown-bar {
@@ -180,7 +179,6 @@ body {
 
   .left-image h1 {
     font-size: 42px;
-    letter-spacing: -6px;
     top: 24px;
     left: 16px;
   }
@@ -228,7 +226,8 @@ body {
   }
 
   .image-scroll-area {
-    height: auto;
+    width: 100%;
+    height: 280px;
     overflow-x: auto;
     overflow-y: hidden;
     transform: none;
@@ -244,7 +243,7 @@ body {
 
   .scroll-inner img {
     width: 100%;
-    height: auto;
+    height: 280px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
@@ -252,7 +251,7 @@ body {
   .brown-bar {
     order: 3;
     position: relative;
-    width: 206.2%;
+    width: 100vw;
     height: 32px;
     bottom: 0px;
   }
