@@ -147,6 +147,18 @@ body {
 
 @media (max-width: 768px) {
 
+.action-btn,
+.action-btn a {
+  color: #000;
+  text-decoration: none;
+}
+
+.action-btn a:visited,
+.action-btn a:active,
+.action-btn a:hover {
+  color: #000;
+}
+
   body {
     overflow-y: auto;
     height: auto;

@@ -145,6 +145,19 @@ body {
 
 @media (max-width: 768px) {
 
+.action-btn,
+.action-btn a {
+  color: #000;
+  text-decoration: none;
+}
+
+.action-btn a:visited,
+.action-btn a:active,
+.action-btn a:hover {
+  color: #000;
+}
+
+
   body {
     overflow-y: auto;
     height: auto;
@@ -213,6 +226,7 @@ body {
   }
 
   .image-scroll-area {
+    width: 100%;
     height: auto;
     overflow-x: auto;
     overflow-y: hidden;
@@ -237,7 +251,7 @@ body {
   .brown-bar {
     order: 3;
     position: relative;
-    width: 155%;
+    width: 100vw;
     height: 32px;
     bottom: 0px;
   }
