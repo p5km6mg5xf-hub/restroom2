@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.exit-btn {
+    position: fixed;
+    top: 15px;
+    left: 24px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: "Noto Sans KR", sans-serif;
+    z-index: 1000;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.left-image {
+    flex: 0 0 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/purifymain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.left-image h1 {
+    writing-mode: vertical-rl;
+    font-size: 70px;
+    letter-spacing: -10px;
+    position: absolute; 
+    top: 40px;          
+    right: 50px;         
+    color: white;      
+    padding: 10px;      
+    margin: 0;          
+}
+.left-image h2 {
+    writing-mode: vertical-rl;
+    font-size: 70px;
+    position: absolute; 
+    bottom: 50px;          
+    right: 50px;         
+    color: white;      
+    padding: 10px;      
+    margin: 0;    
+}
+
+.right-content {
+    flex: 0 0 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    flex: 0 0 auto;
+    padding: 40px 80px;
+    text-align: center;
+    order: 3;
+}
+
+.top-section h3 {
+    font-size: 37px;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+
+.top-section p {
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.button-container {
+    width: 100%;
+    max-width: 450px;               
+    margin: 40px auto;
+    margin-top: 50px;
+    display: flex;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 18px 0;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    border-right: 2px solid #000;
+    font-family: "Noto Sans KR", sans-serif;
+    cursor: pointer;
+}
+
+.action-btn:last-child {
+     border-right: none;           
+}
+
+.arrow {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.image-scroll-area {
+    margin-top: 45px;
+    flex: 1 1 auto;
+    height: auto;
+    max-height: 440px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    order: 2;
+
+}
+
+.scroll-inner {
+    display: inline-flex;
+}
+
+.scroll-inner img {
+    height: 370px
+}
+
+.brown-bar {
+   position: absolute;
+    left: 0;
+    top: 0;                
+    width: 50%;
+    height: 45px;             
+    background-color: #2f1b14; 
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-y: auto;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-image {
+    flex: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    position: relative;
+  }
+
+  .left-image h1 {
+    font-size: 42px;
+    letter-spacing: -6px;
+    top: 24px;
+    left: 16px;
+  }
+
+  .left-image h2 {
+    font-size: 42px;
+    bottom: 24px;
+    left: 16px;
+  }
+
+  .right-content {
+    position: relative;
+    flex: 0 0 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-section {
+    padding: 32px 20px;
+    padding-bottom: 0;
+    text-align: center;
+    order: 1;
+  }
+
+  .top-section h3 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .top-section p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 14px;
+  }
+
+  .button-container {
+    width: 70%;
+    margin: 20px auto 0;
+  }
+
+  .action-btn {
+    font-size: 15px;
+    padding: 14px 0;
+  }
+
+  .image-scroll-area {
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transform: none;
+    order: 2;
+  }
+
+  .scroll-inner {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    transform: none;
+  }
+
+  .scroll-inner img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  .brown-bar {
+    order: 3;
+    position: relative;
+    width: 206.2%;
+    height: 32px;
+    bottom: 0px;
+  }
+
+  .exit-btn {
+    top: 16px;
+    bottom: auto;
+    right: 16px;
+    font-size: 14px;
+  }
+
+}
+
+
+
+
