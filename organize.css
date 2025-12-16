@@ -10,6 +10,10 @@ body {
     overflow: hidden;
 }
 
+p {
+  word-break: keep-all;
+}
+
 .exit-btn {
     position: fixed;
     bottom: 12px;
@@ -125,6 +129,19 @@ body {
 
 }
 
+.image-scroll-area::-webkit-scrollbar {
+  height: 6px;
+}
+
+.image-scroll-area::-webkit-scrollbar-thumb {
+  background: #4a3b34;
+  border-radius: 3px;
+}
+
+.image-scroll-area::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
 .scroll-inner {
     display: inline-flex;
     transform: rotate(180deg);
@@ -159,7 +176,8 @@ body {
   color: #000;
 }
 
- body {
+
+  body {
     overflow-y: auto;
     overflow-x: hidden;
     height: auto;
@@ -227,7 +245,7 @@ body {
 
   .image-scroll-area {
     width: 100%;
-    height: 280px;
+    height: 250px;
     overflow-x: auto;
     overflow-y: hidden;
     transform: none;
@@ -254,13 +272,6 @@ body {
     width: 100vw;
     height: 32px;
     bottom: 0px;
-  }
-
-  .exit-btn {
-    top: 16px;
-    bottom: auto;
-    right: 16px;
-    font-size: 14px;
   }
 
 }

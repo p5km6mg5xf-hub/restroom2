@@ -10,6 +10,23 @@ body {
     overflow: hidden;
 }
 
+p {
+  word-break: keep-all;
+}
+
+.image-scroll-area::-webkit-scrollbar {
+  height: 6px;
+}
+
+.image-scroll-area::-webkit-scrollbar-thumb {
+  background: #4a3b34;
+  border-radius: 3px;
+}
+
+.image-scroll-area::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
 .exit-btn {
   position: fixed;
   top: 13px;
@@ -252,13 +269,6 @@ body {
     width: 100vw;
     height: 32px;
     bottom: 0px;
-  }
-
-  .exit-btn {
-    top: 16px;
-    bottom: auto;
-    right: 16px;
-    font-size: 14px;
   }
 
 }

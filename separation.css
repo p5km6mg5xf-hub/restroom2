@@ -5,6 +5,10 @@
     font-family: "Pretendard", sans-serif;
 }
 
+p {
+  word-break: keep-all;
+}
+
 body {
     height: 100vh;
     overflow: hidden;
@@ -116,10 +120,23 @@ body {
 
 .image-scroll-area {
     height: 440px;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
     padding-bottom: 50px;
     transform: rotate(180deg);
+}
+
+.image-scroll-area::-webkit-scrollbar {
+  height: 6px;
+}
+
+.image-scroll-area::-webkit-scrollbar-thumb {
+  background: #4a3b34;
+  border-radius: 3px;
+}
+
+.image-scroll-area::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
 }
 
 .scroll-inner {
@@ -251,13 +268,6 @@ body {
     width: 100vw;
     height: 32px;
     bottom: 0px;
-  }
-
-  .exit-btn {
-    top: 16px;
-    bottom: auto;
-    right: 16px;
-    font-size: 14px;
   }
 
 }

@@ -23,11 +23,11 @@ html, body {
 .left-text {
     position: absolute;
     left: 55px;
-    top: 200px;
+    top: 160px;
     transform: translateY(-50%);
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 72px;
+    font-size: 40px;
     font-weight: 700;
     color: white;
 }
@@ -37,10 +37,9 @@ html, body {
     right: 50px;
     top: 20%;
     transform: translateY(-30%);
-    /*word-spacing: -10px;*/
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     color: white;
 }
@@ -49,6 +48,6 @@ html, body {
     position: absolute;
     right: 40px;
     bottom: 30px;
-    font-size: 16px;
+    font-size: 13px;
     color: rgba(255, 255, 255, 0.9);
 }
