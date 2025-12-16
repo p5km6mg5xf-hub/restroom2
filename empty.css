@@ -14,19 +14,6 @@ p {
   word-break: keep-all;
 }
 
-.image-scroll-area::-webkit-scrollbar {
-  height: 6px;
-}
-
-.image-scroll-area::-webkit-scrollbar-thumb {
-  background: #4a3b34;
-  border-radius: 3px;
-}
-
-.image-scroll-area::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.1);
-}
-
 .exit-btn {
   position: fixed;
   top: 13px;
@@ -138,7 +125,19 @@ p {
     overflow-x: auto;
     overflow-y: hidden;
     order: 2;
+}
 
+.image-scroll-area::-webkit-scrollbar {
+  height: 6px;
+}
+
+.image-scroll-area::-webkit-scrollbar-thumb {
+  background: #4a3b34;
+  border-radius: 3px;
+}
+
+.image-scroll-area::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
 }
 
 .scroll-inner {
